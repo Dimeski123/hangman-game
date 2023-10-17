@@ -1,0 +1,331 @@
+body{
+    font-family: Montserrat;
+    margin: 0;
+    overflow-y: auto;
+}
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgb(192,254,207);
+    background: linear-gradient(180deg, rgba(192,254,207,1) 0%, rgba(30,213,169,1) 100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 48px;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0;
+    text-shadow: 2px 2px gray;
+}
+.login-form{
+    width: 60%;
+    margin: 15px auto;
+    align-items: center;
+    text-align: center;
+}
+.reg-form{
+    width: 60%;
+    margin: 15px auto;
+    align-items: center;
+    text-align: center;
+}
+fieldset{
+    border: none;
+    margin-bottom: 30px;
+}
+
+.login-form a{
+    color: #7518f0;
+    text-decoration: none;
+}
+.login-form h1 {
+    font-size: 38px;
+}
+.login-form p {
+    font-size: 18px;
+}
+.reg-form a{
+    text-decoration: none;
+}
+.reg-form h1 {
+    font-size: 38px;
+}
+.reg-form p {
+    font-size: 18px;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+label{
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    color: #4c4c4c;
+    height: 50px;
+    font-size: 16px;
+    padding: 2px 5px;
+}
+
+input[type="submit"]{
+    width: 30%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(192,254,207,1) 0%, rgba(30,213,169,1) 100%);
+    border: none;
+    font-size: 28px;
+    color: white;
+
+
+}
+input[type="submit"]:hover{
+    text-shadow: 2px 2px 4px #000000;
+    filter: drop-shadow(2px 2px 2px #000000);
+    transition: text-shadow 0.6s ease, filter 0.6s ease;
+}
+
+.exit-btn{
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top:100px;
+    right: 25px;
+    background-color: black;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.exit-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.exit-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    filter: drop-shadow(2px 2px 4px #000000);
+    transition: background-color 0.6s ease;
+}
+.exit-btn:hover i{
+    color: black;
+}
+
+.logout-container{
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+.logout{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    float: right;
+    background-color: black;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.logout:hover{
+    background-color: white;
+    border: 1px solid black;
+    filter: drop-shadow(2px 2px 4px #000000);
+    transition: background-color 0.6s ease;
+}
+.logout:hover i {
+    color: black;
+}
+
+.welcome-difficulty-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+.welcome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.welcome h2 {
+    margin-left: 20px;
+}
+.difficulty{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.difficulty select{
+    width: 20%;
+    height: 30px;
+    margin-left: 15px;
+    padding: 5px;
+}
+.difficulty button{
+    margin-left: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px 10px;
+}
+.difficulty button:hover{
+    background-color: black;
+    color: white;
+    filter: drop-shadow(2px 2px 4px #000000);
+    transition: background-color 0.6s ease;
+}
+.hangman-container{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letters{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+}
+.letters button{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.letters button:hover{
+    color: gray;
+}
+.letter_guess{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.letter_guess_space{
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 36px;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+    border: none;
+
+}
+.letters-display{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+}
+
+.leaderboard {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+}
+.leaderboard h1{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.leaderboard table {
+    width: 100%;
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
+    border-spacing: 0;
+
+}
+.leaderboard thead{
+    background-color: rgb(245,245,245);
+    color: #6c757d;
+}
+.leaderboard th, .leaderboard td{
+    border-bottom: solid 1px #f5f2f5;
+}
+.position {
+    width: 20%;
+}
+.username {
+    width: 50%;
+}
+.score {
+    width: 20%;
+}
+.score-container {
+    margin-left: 15px;
+}
+
+.reset {
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(192,254,207,1) 0%, rgba(30,213,169,1) 100%);
+    border: none;
+    padding: 5px 20px;
+    font-size: 28px;
+    color: white;
+    margin-left: 15px;
+}
+#hangman-img {
+    width: 500px;
+    height: 500px;
+}
